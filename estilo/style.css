@@ -89,13 +89,43 @@ nav  a{
 }
 nav > a:hover{
     
-    color: #0D4547; 
-     
+    color: #0D4547;
+    display: inline-block;
+    position: relative;
+    color: white; 
+    
+
+}
+
+.w3rcontainer{
+    border: 1px solid #cccfdb;
+    border-radius: 2px;
+}
+nav >a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    background-color: white;
+    transform-origin: center;
+    transition:  transform 0.25s ease-out; 
     
 }
+nav >a:hover:after{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+nav >a:active{
+    color: rgb(197, 197, 197);
+}
+
 a.externo::after{
     content: '\00A0\1F517';
 }
+
 
 
 main{
