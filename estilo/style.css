@@ -42,8 +42,6 @@ header{
     min-height:150px;
     text-align: center;
     padding-top: 40px;
-    text-shadow: 3px 5px 7px  rgba(0, 0, 0, 0.5);
-    margin: 0px;
 }
 header > p{
     color: white;
@@ -52,6 +50,8 @@ header > p{
     margin: auto;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 50px;
+    text-shadow: 3px 5px 7px  rgba(0, 0, 0, 0.5);
 }
 header > h1{
     font-family: var(--font-padrao);
@@ -89,8 +89,12 @@ nav  a{
 }
 nav > a:hover{
     
-    color: #0D4547;   
+    color: #0D4547; 
+     
     
+}
+a.externo::after{
+    content: '\1F517';
 }
 
 
@@ -111,11 +115,8 @@ main  h1{
     font-size: 1.9em;
     padding: 10px;
     min-width: 300px;
-    font-weight: normal
-    ;
-    
-   
-   
+    font-weight: normal;
+ 
 }
 main h2{
     font-family: var(--font-android);
@@ -153,7 +154,7 @@ main a{
 
 }
 main a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: #013111;
    transform:scale(.9) ;
 
