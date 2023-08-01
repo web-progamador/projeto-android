@@ -94,7 +94,7 @@ nav > a:hover{
     
 }
 a.externo::after{
-    content: '\1F517';
+    content: '\00A0\1F517';
 }
 
 
